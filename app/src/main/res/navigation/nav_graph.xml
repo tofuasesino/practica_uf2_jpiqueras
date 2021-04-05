@@ -3,46 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/mainActivity">
 
-    <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.joelPiquerasGarcia.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.joelPiquerasGarcia.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.joelPiquerasGarcia.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+            android:id="@+id/action_mainActivity_to_activity22"
+            app:destination="@id/activity22" />
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/First2Fragment"
-        android:name="com.example.joelPiquerasGarcia.First2Fragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first2">
-
-        <action
-            android:id="@+id/action_First2Fragment_to_Second2Fragment"
-            app:destination="@id/Second2Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/Second2Fragment"
-        android:name="com.example.joelPiquerasGarcia.Second2Fragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second2">
-
-        <action
-            android:id="@+id/action_Second2Fragment_to_First2Fragment"
-            app:destination="@id/First2Fragment" />
-    </fragment>
+            android:id="@+id/action_mainActivity_to_activity32"
+            app:destination="@id/activity32" />
+    </activity>
+    <activity
+        android:id="@+id/activity22"
+        android:name="com.example.joelPiquerasGarcia.Activity2"
+        android:label="Activity2" />
+    <activity
+        android:id="@+id/activity32"
+        android:name="com.example.joelPiquerasGarcia.Activity3"
+        android:label="Activity3" />
 </navigation>
