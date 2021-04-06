@@ -14,15 +14,14 @@ import android.widget.VideoView;
 public class MainActivity extends AppCompatActivity {
 private static final String VIDEO_SAMPLE = "nevergiveup";
 private VideoView videoView;
-private Button button1;
-private Button button2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button1 = findViewById(R.id.activity2);
+        Button button1 = (Button) findViewById(R.id.activity2);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +29,7 @@ private Button button2;
             }
         });
 
-        button2 = findViewById(R.id.activity3);
+        Button button2 = (Button) findViewById(R.id.activity3);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

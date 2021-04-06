@@ -25,7 +25,7 @@ import java.util.Date;
 public class Activity3 extends AppCompatActivity {
 ImageView imageView;
 Button button;
-º
+
 @Override
     protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
